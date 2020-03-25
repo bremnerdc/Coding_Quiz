@@ -1,0 +1,59 @@
+#wrapper {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    width: 40%;
+    left: 400px;
+}
+
+/* #content {
+    position: relative;
+    left: 400px;
+} */
+
+.start {
+    text-align: center;
+  }
+
+.hide {
+    display: none;
+}
+
+
+button {
+    background-color: #4b2e83;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+
+
+#rightOrwrong {
+    -moz-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
