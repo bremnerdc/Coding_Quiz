@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Code Quiz</title>
 </head>
 <body>
-    <div id="start-screen" class="start">
+    <div id="timer">Time:</div><span id="time">0</span>
     <div id="wrapper"> 
+    <div id="start-screen" class="start">
         <h1>Coding Quiz Challenge</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus cursus ullamcorper. Praesent a sagittis lacus. Duis in ipsum a sem malesuada porta eu ut tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc tempor fermentum laoreet. Vestibulum laoreet nunc non posuere lobortis.
+            Answer the following questions within the allotted time 
+            limit. The quicker you answer each question, the higher your score. 
+            You have 15 seconds to answer each quesion, and
+            incorrect answeres will penalize your score by ten seconds!
          </p>
         <button id="start-button">
             Start quiz
@@ -22,10 +26,22 @@
 
 <div id="questions" class="hide">
     <h1 id="questions-title">sample</h1>
+    <div id="choices" class="choice"></div>
+</div>
+
+<div id="endscreen" class="hide"></div>
+
+<div id="feedback" class="hide feedback">
+    <h1>All Done!</h1>
+    <p>Final Score:<span id="final-score"></span></p>
+    <p>Intitials:<input type="text" id="Intials" max="3"/></p>
 </div>
 
 
 
-    <script src="./script.js"></script>
+
+    <script src="./Assets/script.js"></script>
+    <script src="./Assets/logic.js"></script>
+    <script src="./Assets/questions.js"></script>
 </body>
 </html>

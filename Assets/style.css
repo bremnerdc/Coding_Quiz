@@ -6,19 +6,9 @@
     left: 400px;
 }
 
-/* #content {
-    position: relative;
-    left: 400px;
-} */
-
 .start {
     text-align: center;
   }
-
-.hide {
-    display: none;
-}
-
 
 button {
     background-color: #4b2e83;
@@ -29,7 +19,6 @@ button {
 button:hover {
     background-color: blueviolet;
 }
-
 
 
 #rightOrwrong {
@@ -43,6 +32,16 @@ button:hover {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+
+#Time-Display {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hide {
+    display: none;
+}
+
 @keyframes cssAnimation {
     to {
         width:0;
