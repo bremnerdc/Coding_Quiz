@@ -20,18 +20,18 @@ button:hover {
     background-color: blueviolet;
 }
 
-
+/* 
 #rightOrwrong {
-    -moz-animation: cssAnimation 0s ease-in 3s forwards;
+    -moz-animation: cssAnimation 0s ease-in 3s forwards; */
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+    /* -webkit-animation: cssAnimation 0s ease-in 3s forwards; */
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    /* -o-animation: cssAnimation 0s ease-in 3s forwards; */
     /* Opera */
-    animation: cssAnimation 0s ease-in 3s forwards;
+    /* animation: cssAnimation 0s ease-in 3s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-}
+} */
 
 #Time-Display {
     margin-right: auto;
@@ -42,7 +42,7 @@ button:hover {
     display: none;
 }
 
-@keyframes cssAnimation {
+/* @keyframes cssAnimation {
     to {
         width:0;
         height:0;
@@ -54,5 +54,5 @@ button:hover {
         width:0;
         height:0;
         visibility:hidden;
-    }
+    } */
 }
