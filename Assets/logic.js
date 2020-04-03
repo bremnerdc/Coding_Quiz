@@ -98,25 +98,30 @@ function clockTick() {
 
 function highScores() {
   var enteredInitials = initials.value.trim();
-  if (enteredInitials != "") {
-  var highScore = JSON.parse(window.localStorage.getItem("High Scores")) || [];
+
+  if (enteredInitials !== "") {
+  var highScore = JSON.parse(window.localStorage.getItem("HighScores")) || [];
+
   var newScore = {
     score: time, 
     initials: initials
   };
+
  highScore.push(newScore);
- window.localStorage.setItem("High Scores", JSON.stringify.highScore);
+ 
+ window.localStorage.setItem("HighScores", JSON.stringify(highScore));
+
  window.location.href = "highscores.html";
 }
 }
 
-function enterBtn() {
-  if (keydown === "13") {
-    highScores();
-  }
-}
+// function enterBtn(event) {
+//   if (event.key === "Enter") {
+//     highScores();
+//   }
+// }
 
-// initials.onkeydown  = enterBtn;
+// initials.onkeyup  = enterBtn;
 submitBtn.onclick = highScores;
 startBtn.onclick = startQuiz;
 
