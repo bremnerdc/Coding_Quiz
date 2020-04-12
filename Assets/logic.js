@@ -7,7 +7,7 @@ var timerElement = document.getElementById("timer");
 var choicesEl = document.getElementById("choices");
 var startBtn = document.getElementById("start-button");
 var submitBtn = document.getElementById("submit");
-var intials = document.getElementById("initials");
+var initials = document.getElementById("initials");
 var feedback = document.getElementById("feedback");
 var timeEl = document.querySelector("#Timer");
 var highscoreEl = document.querySelector("#HighScore");
@@ -101,10 +101,10 @@ function highScores() {
 
   if (enteredInitials !== "") {
   var highScore = JSON.parse(window.localStorage.getItem("HighScores")) || [];
-
+console.log(highScore);
   var newScore = {
     score: time, 
-    initials: initials
+    enteredInitials: enteredInitials
   };
 
  highScore.push(newScore);

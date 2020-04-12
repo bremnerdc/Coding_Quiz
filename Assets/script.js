@@ -5,9 +5,9 @@ function prntHighScores() {
         return b.score - a.score;
     });
     
-highScores.foreach(function(score) {
+highScores.forEach(function(score) {
     var listTag = document.createElement("li");
-    listTag.textContent = score.initials + " - " + score.score;
+    listTag.textContent = score.enteredInitials + " - " + score.score;
     var olElement = document.getElementById("HighScores");
     olElement.appendChild(listTag);
 });
