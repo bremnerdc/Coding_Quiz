@@ -14,5 +14,7 @@ Using JavaScript I coded the following:
 * Display all high scores and saved initials in list on high score page.
 
 ### Screenshots:
-
+*![image](https://user-images.githubusercontent.com/61300825/79061210-948a5180-7c42-11ea-825e-1ff0f959d20c.png)
+*![image](https://user-images.githubusercontent.com/61300825/79061213-99e79c00-7c42-11ea-9144-5305d76a2d99.png)
+*![image](https://user-images.githubusercontent.com/61300825/79061216-9eac5000-7c42-11ea-9f8a-b2b29bfbb724.png)
 
